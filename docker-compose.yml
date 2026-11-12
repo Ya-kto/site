@@ -1,0 +1,7 @@
+services:
+  web:
+    build: .
+    container_name: site-8005
+    ports:
+      - "8005:80"
+    restart: unless-stopped

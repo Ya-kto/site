@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Кристина Горшкова — визитка</title>
+  <meta name="description" content="Кристина Горшкова, студентка колледжа. Сайт-визитка — мой учебный проект.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="profile">
+    <!-- Шапка-контейнер: положите картинку в site/images/banner.jpg -->
+    <div class="banner">
+      <img src="images/banner.jpg" alt="" onerror="this.remove()">
+    </div>
+
+    <div class="container profile-row">
+      <!-- Аватар: site/images/avatar.jpg (необязательно) -->
+      <div class="avatar" data-initials="КГ">
+        <img src="images/avatar.jpg" alt="Кристина Горшкова" onerror="this.remove()">
+      </div>
+      <div class="who">
+        <h1>Кристина Горшкова</h1>
+        <p class="role">Студентка колледжа. Группа 2ИСП11-47</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="tabs">
+    <div class="container tabs-row">
+      <div class="tablist" role="tablist" aria-label="Разделы">
+        <button type="button" role="tab" id="tab-about" aria-controls="about" data-tab="about" aria-selected="true">Обо мне</button>
+        <button type="button" role="tab" id="tab-stack" aria-controls="stack" data-tab="stack" aria-selected="false">Стек</button>
+        <button type="button" role="tab" id="tab-contacts" aria-controls="contacts" data-tab="contacts" aria-selected="false">Связь</button>
+      </div>
+      <button type="button" id="theme-toggle" aria-label="Сменить тему">Тёмная тема</button>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section id="about" role="tabpanel" aria-labelledby="tab-about">
+      <h2>Обо мне</h2>
+      <p>
+        Я студентка колледжа. Этот сайт-визитка — мой учебный проект для производственной практики. У меня нет портфолио на данный момент, поэтому тут пустовато.
+      </p>
+    </section>
+
+    <section id="stack" role="tabpanel" aria-labelledby="tab-stack">
+      <h2>Стек</h2>
+      <ul class="tags">
+        <li>Python</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ul>
+    </section>
+
+    <section id="contacts" role="tabpanel" aria-labelledby="tab-contacts">
+      <h2>Контакты</h2>
+      <ul class="links">
+        <li><a href="https://github.com/Ya-kto">GitHub</a></li>
+        <li><a href="https://t.me/@Aweinsomnia">Telegram</a></li>
+        <li><a href="kristenfaceless1010@gmail.com">Почта</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© <span id="year"></span> Кристина Горшкова</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
